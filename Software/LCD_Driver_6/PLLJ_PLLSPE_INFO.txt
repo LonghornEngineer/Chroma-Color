@@ -1,0 +1,5 @@
+PLL_Name	bit_clock:u1|altpll:altpll_component|bit_clock_altpll:auto_generated|pll1
+PLLJITTER	29
+PLLSPEmax	84
+PLLSPEmin	-53
+

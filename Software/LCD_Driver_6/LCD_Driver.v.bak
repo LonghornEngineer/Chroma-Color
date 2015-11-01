@@ -1,0 +1,24 @@
+module LCD_Driver(
+
+	clock_50,
+	LED_indicator
+
+);
+
+
+input clock_50;
+output LED_indicator;
+
+reg [23:0] cnt = 0;
+
+
+always @ (posedge clock_50)
+begin
+
+	cnt <= cnt + 1;
+	
+end
+
+assign LED_indicator <= cnt[23];
+
+endmodule

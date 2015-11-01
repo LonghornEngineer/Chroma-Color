@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jul 12 19:31:51 2015
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : LCD_Driver
+Top-level Entity Name : LCD_Driver
+Family : Cyclone IV E
+Total logic elements : 588
+    Total combinational functions : 575
+    Dedicated logic registers : 156
+Total registers : 156
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 65,536
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

@@ -17067,12 +17067,12 @@
 <attribute name="LABEL08" value="TDI"/>
 <attribute name="LABEL09" value="GND"/>
 </part>
-<part name="R1" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
-<part name="R2" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
-<part name="R3" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
-<part name="R4" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
-<part name="R5" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
-<part name="R6" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
+<part name="R1" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="1K"/>
+<part name="R2" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="10K"/>
+<part name="R3" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="10K"/>
+<part name="R4" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="10K"/>
+<part name="R5" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="10K"/>
+<part name="R6" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="10K"/>
 <part name="C1" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="C2" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="C3" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
@@ -17097,11 +17097,9 @@
 <part name="U3" library="PP_PowerIC" deviceset="ADP3338" device="AKCZ-2.5-RL"/>
 <part name="U4" library="PP_PowerIC" deviceset="NCV565" device="ST12T3G"/>
 <part name="U5" library="PP_DigitalIC" deviceset="M25P40" device="-VMN6TPBCT"/>
-<part name="R7" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="25"/>
-<part name="R8" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="25"/>
-<part name="R9" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
-<part name="R10" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
-<part name="R11" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="4.7K"/>
+<part name="R9" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="10K"/>
+<part name="R10" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="10K"/>
+<part name="R11" library="MF_Passives" deviceset="RESISTOR" device="_0805" value="10K"/>
 <part name="X1" library="PP_FreqCtrl" deviceset="ASDMB" device="" value="ASDMB-50.000MHZ-LC-T"/>
 <part name="C21" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.01uF"/>
 <part name="J2" library="PP_Connectors" deviceset="87832-6422" device="" value="87832-6422"/>
@@ -17162,12 +17160,10 @@
 <instance part="U2" gate="G$1" x="-312.42" y="10.16"/>
 <instance part="U3" gate="G$1" x="-312.42" y="-10.16"/>
 <instance part="U4" gate="G$1" x="-312.42" y="-30.48"/>
-<instance part="U5" gate="G$1" x="-127" y="104.14"/>
-<instance part="R7" gate="G$1" x="-152.4" y="101.6" rot="R180"/>
-<instance part="R8" gate="G$1" x="-152.4" y="96.52" rot="R180"/>
-<instance part="R9" gate="G$1" x="-162.56" y="111.76" rot="R270"/>
-<instance part="R10" gate="G$1" x="-167.64" y="111.76" rot="R270"/>
-<instance part="R11" gate="G$1" x="-172.72" y="111.76" rot="R270"/>
+<instance part="U5" gate="G$1" x="-144.78" y="104.14"/>
+<instance part="R9" gate="G$1" x="-149.86" y="111.76" rot="R270"/>
+<instance part="R10" gate="G$1" x="-154.94" y="111.76" rot="R270"/>
+<instance part="R11" gate="G$1" x="-160.02" y="111.76" rot="R270"/>
 <instance part="X1" gate="G$1" x="-147.32" y="76.2"/>
 <instance part="C21" gate="G$1" x="-121.92" y="73.66"/>
 <instance part="J2" gate="G$1" x="-200.66" y="2.54"/>
@@ -17377,8 +17373,8 @@
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
-<wire x1="-114.3" y1="93.98" x2="-104.14" y2="93.98" width="0.1524" layer="91"/>
-<label x="-111.76" y="93.98" size="1.27" layer="95" font="vector"/>
+<wire x1="-132.08" y1="93.98" x2="-121.92" y2="93.98" width="0.1524" layer="91"/>
+<label x="-129.54" y="93.98" size="1.27" layer="95" font="vector"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="GND"/>
@@ -17603,31 +17599,31 @@
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="!W"/>
-<wire x1="-114.3" y1="96.52" x2="-104.14" y2="96.52" width="0.1524" layer="91"/>
-<label x="-111.76" y="96.52" size="1.27" layer="95" font="vector"/>
+<wire x1="-132.08" y1="96.52" x2="-121.92" y2="96.52" width="0.1524" layer="91"/>
+<label x="-129.54" y="96.52" size="1.27" layer="95" font="vector"/>
 <pinref part="U5" gate="G$1" pin="VCC"/>
-<wire x1="-114.3" y1="101.6" x2="-104.14" y2="101.6" width="0.1524" layer="91"/>
-<label x="-111.76" y="101.6" size="1.27" layer="95" font="vector"/>
-<wire x1="-104.14" y1="96.52" x2="-104.14" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="99.06" x2="-104.14" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="101.6" x2="-104.14" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="119.38" x2="-162.56" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="101.6" x2="-121.92" y2="101.6" width="0.1524" layer="91"/>
+<label x="-129.54" y="101.6" size="1.27" layer="95" font="vector"/>
+<wire x1="-121.92" y1="96.52" x2="-121.92" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="99.06" x2="-121.92" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="101.6" x2="-121.92" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="119.38" x2="-149.86" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="P$1"/>
-<wire x1="-162.56" y1="119.38" x2="-167.64" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="-167.64" y1="119.38" x2="-172.72" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="-172.72" y1="119.38" x2="-172.72" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="119.38" x2="-154.94" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="119.38" x2="-160.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="119.38" x2="-160.02" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="P$1"/>
-<wire x1="-167.64" y1="116.84" x2="-167.64" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="116.84" x2="-154.94" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="P$1"/>
-<wire x1="-162.56" y1="116.84" x2="-162.56" y2="119.38" width="0.1524" layer="91"/>
-<junction x="-104.14" y="101.6"/>
+<wire x1="-149.86" y1="116.84" x2="-149.86" y2="119.38" width="0.1524" layer="91"/>
+<junction x="-121.92" y="101.6"/>
 <pinref part="U5" gate="G$1" pin="!HOLD"/>
-<wire x1="-114.3" y1="99.06" x2="-104.14" y2="99.06" width="0.1524" layer="91"/>
-<label x="-111.76" y="99.06" size="1.27" layer="95" font="vector"/>
-<junction x="-104.14" y="99.06"/>
-<junction x="-167.64" y="119.38"/>
-<junction x="-162.56" y="119.38"/>
-<label x="-172.72" y="119.38" size="1.27" layer="95" font="vector"/>
+<wire x1="-132.08" y1="99.06" x2="-121.92" y2="99.06" width="0.1524" layer="91"/>
+<label x="-129.54" y="99.06" size="1.27" layer="95" font="vector"/>
+<junction x="-121.92" y="99.06"/>
+<junction x="-154.94" y="119.38"/>
+<junction x="-149.86" y="119.38"/>
+<label x="-160.02" y="119.38" size="1.27" layer="95" font="vector"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="VDD"/>
@@ -17768,15 +17764,12 @@
 <net name="EPCS_ASDI" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="DQ0"/>
-<wire x1="-129.54" y1="101.6" x2="-142.24" y2="101.6" width="0.1524" layer="91"/>
-<label x="-137.16" y="101.6" size="1.27" layer="95" font="vector"/>
-<wire x1="-142.24" y1="101.6" x2="-142.24" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="104.14" x2="-167.64" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="101.6" x2="-154.94" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="P$2"/>
-<wire x1="-167.64" y1="104.14" x2="-187.96" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-167.64" y1="106.68" x2="-167.64" y2="104.14" width="0.1524" layer="91"/>
-<label x="-187.96" y="104.14" size="1.27" layer="95" font="vector"/>
-<junction x="-167.64" y="104.14"/>
+<wire x1="-154.94" y1="101.6" x2="-175.26" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="106.68" x2="-154.94" y2="101.6" width="0.1524" layer="91"/>
+<label x="-175.26" y="101.6" size="1.27" layer="95" font="vector"/>
+<junction x="-154.94" y="101.6"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="6"/>
@@ -17784,35 +17777,15 @@
 <label x="-289.56" y="180.34" size="1.27" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="DQ1" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="DQ1"/>
-<wire x1="-129.54" y1="99.06" x2="-144.78" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-144.78" y1="99.06" x2="-144.78" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-144.78" y1="101.6" x2="-147.32" y2="101.6" width="0.1524" layer="91"/>
-<label x="-137.16" y="99.06" size="1.27" layer="95" font="vector"/>
-<pinref part="R7" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="C" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="C"/>
-<wire x1="-129.54" y1="96.52" x2="-147.32" y2="96.52" width="0.1524" layer="91"/>
-<label x="-137.16" y="96.52" size="1.27" layer="95" font="vector"/>
-<pinref part="R8" gate="G$1" pin="P$1"/>
-</segment>
-</net>
 <net name="EPCS_!CS" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="!S"/>
-<label x="-137.16" y="93.98" size="1.27" layer="95" font="vector"/>
-<wire x1="-129.54" y1="93.98" x2="-172.72" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="93.98" x2="-160.02" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="P$2"/>
-<wire x1="-175.26" y1="93.98" x2="-187.96" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-172.72" y1="106.68" x2="-172.72" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-175.26" y1="93.98" x2="-172.72" y2="93.98" width="0.1524" layer="91"/>
-<junction x="-172.72" y="93.98"/>
-<label x="-187.96" y="93.98" size="1.27" layer="95" font="vector"/>
+<wire x1="-160.02" y1="93.98" x2="-175.26" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="106.68" x2="-160.02" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-160.02" y="93.98"/>
+<label x="-175.26" y="93.98" size="1.27" layer="95" font="vector"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="8"/>
@@ -17822,13 +17795,13 @@
 </net>
 <net name="EPCS_DATA" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="P$2"/>
-<wire x1="-157.48" y1="101.6" x2="-162.56" y2="101.6" width="0.1524" layer="91"/>
-<label x="-187.96" y="101.6" size="1.27" layer="95" font="vector"/>
+<label x="-175.26" y="99.06" size="1.27" layer="95" font="vector"/>
 <pinref part="R9" gate="G$1" pin="P$2"/>
-<wire x1="-162.56" y1="101.6" x2="-187.96" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="106.68" x2="-162.56" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-162.56" y="101.6"/>
+<wire x1="-149.86" y1="99.06" x2="-175.26" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="106.68" x2="-149.86" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-149.86" y="99.06"/>
+<pinref part="U5" gate="G$1" pin="DQ1"/>
+<wire x1="-147.32" y1="99.06" x2="-149.86" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="13"/>
@@ -17838,9 +17811,9 @@
 </net>
 <net name="EP_DCLK" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="P$2"/>
-<wire x1="-187.96" y1="96.52" x2="-157.48" y2="96.52" width="0.1524" layer="91"/>
-<label x="-187.96" y="96.52" size="1.27" layer="95" font="vector"/>
+<wire x1="-175.26" y1="96.52" x2="-147.32" y2="96.52" width="0.1524" layer="91"/>
+<label x="-175.26" y="96.52" size="1.27" layer="95" font="vector"/>
+<pinref part="U5" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$11" pin="12"/>

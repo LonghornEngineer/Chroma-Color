@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Oct 25 15:58:03 2015
+Quartus II 64-Bit Version : 13.1.4 Build 182 03/12/2014 SJ Web Edition
+Revision Name : LCD_DMD_driver
+Top-level Entity Name : LCD_DMD_driver
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 513 / 6,272 ( 8 % )
+    Total combinational functions : 501 / 6,272 ( 8 % )
+    Dedicated logic registers : 138 / 6,272 ( 2 % )
+Total registers : 138
+Total pins : 25 / 92 ( 27 % )
+Total virtual pins : 0
+Total memory bits : 65,536 / 276,480 ( 24 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

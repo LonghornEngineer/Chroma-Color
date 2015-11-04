@@ -1,0 +1,24 @@
+module LCD_DMD_driver(
+
+	clock_50,
+
+	dotClock,				//Rising edge pulse that data comes in on
+	dotData,					//Dots coming in from video processor
+	dotLatch,				//Active high pulse that loads frame onto display
+	dotReg,					//Select which register to write to
+	dotEnable,
+	
+	pairECLK,
+	pairE2,
+	pairE1,
+	pairE0,	
+	
+	pairOCLK,
+	pairO2,
+	pairO1,
+	pairO0,
+
+	backlight_en,
+	backlight_pwm
+	
+);

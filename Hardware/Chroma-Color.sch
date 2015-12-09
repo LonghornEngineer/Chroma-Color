@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5915,7 +5915,7 @@
 <wire x1="-12.5476" y1="4.2926" x2="-8.89" y2="4.2926" width="0.127" layer="21"/>
 <wire x1="-12.5476" y1="-4.2926" x2="-8.89" y2="-4.2926" width="0.127" layer="21"/>
 </package>
-<package name="MOLEX_KK_4_P1">
+<package name="26-64-4040(KEYPIN1)">
 <pad name="4" x="5.94" y="0" drill="1.7018" shape="long" rot="R90"/>
 <pad name="3" x="1.98" y="0" drill="1.7018" shape="long" rot="R90"/>
 <pad name="2" x="-1.98" y="0" drill="1.7018" shape="long" rot="R90"/>
@@ -6149,7 +6149,7 @@
 <text x="22.86" y="-15.24" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL14</text>
 <text x="29.972" y="-15.24" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN14</text>
 </symbol>
-<symbol name="PH_1X03">
+<symbol name="CON_01X03">
 <description>Symbol for 3 pin connectors</description>
 <pin name="PIN2" x="-2.54" y="-2.54" visible="off" length="short"/>
 <text x="7.62" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL02</text>
@@ -6349,13 +6349,13 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="HEADER_01X03" prefix="J" uservalue="yes">
+<deviceset name="CON_01X03" prefix="J" uservalue="yes">
 <description>3 pin connectors</description>
 <gates>
-<gate name="G$1" symbol="PH_1X03" x="0" y="0"/>
+<gate name="G$1" symbol="CON_01X03" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MOLEX_KK_4_P1" package="MOLEX_KK_4_P1">
+<device name="26-64-4040(KEYPIN1)" package="26-64-4040(KEYPIN1)">
 <connects>
 <connect gate="G$1" pin="PIN1" pad="2"/>
 <connect gate="G$1" pin="PIN2" pad="3"/>
@@ -7427,11 +7427,6 @@
 <part name="!RESET" library="MF_Switches" deviceset="TACT" device="_4.2MM"/>
 <part name="R7" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
 <part name="J4" library="PP_Connectors" deviceset="SMT_02X07" device="D2514-6V0C-AR-WD" value="D2514-6V0C-AR-WD"/>
-<part name="J7" library="PP_Connectors" deviceset="HEADER_01X03" device="MOLEX_KK_4_P1" value="26-64-4040">
-<attribute name="LABEL01" value="12V"/>
-<attribute name="LABEL02" value="5V"/>
-<attribute name="LABEL03" value="GND"/>
-</part>
 <part name="C10" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="C11" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="C15" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="10uF"/>
@@ -7502,6 +7497,11 @@
 <part name="FID2" library="MF_Aesthetics" deviceset="FIDUCIAL" device="_100MIL"/>
 <part name="FID3" library="MF_Aesthetics" deviceset="FIDUCIAL" device="_0.5MM"/>
 <part name="FID4" library="MF_Aesthetics" deviceset="FIDUCIAL" device="_0.5MM"/>
+<part name="J7" library="PP_Connectors" deviceset="CON_01X03" device="26-64-4040(KEYPIN1)" value="26-64-4040">
+<attribute name="LABEL01" value="12V"/>
+<attribute name="LABEL02" value="5V"/>
+<attribute name="LABEL03" value="GND"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7570,7 +7570,6 @@
 <instance part="!RESET" gate="G$1" x="-116.84" y="63.5"/>
 <instance part="R7" gate="G$1" x="-246.38" y="129.54" rot="R270"/>
 <instance part="J4" gate="G$1" x="-45.72" y="147.32"/>
-<instance part="J7" gate="G$1" x="-111.76" y="35.56"/>
 <instance part="C10" gate="G$1" x="-233.68" y="17.78"/>
 <instance part="C11" gate="G$1" x="-396.24" y="17.78"/>
 <instance part="C15" gate="G$1" x="-388.62" y="17.78"/>
@@ -7619,6 +7618,7 @@
 <instance part="FID2" gate="G$1" x="-15.24" y="30.48"/>
 <instance part="FID3" gate="G$1" x="-27.94" y="35.56"/>
 <instance part="FID4" gate="G$1" x="-27.94" y="30.48"/>
+<instance part="J7" gate="G$1" x="-111.76" y="35.56"/>
 </instances>
 <busses>
 </busses>

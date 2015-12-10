@@ -5924,10 +5924,9 @@
 <wire x1="7.9284" y1="3.8862" x2="7.9284" y2="-5.0038" width="0.127" layer="21"/>
 <wire x1="7.9284" y1="-5.0038" x2="-7.7434" y2="-5.0038" width="0.127" layer="21"/>
 <wire x1="-7.7434" y1="-5.0038" x2="-7.7434" y2="3.8862" width="0.127" layer="21"/>
-<text x="-7.7434" y="6.5" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="0" y="14.12" size="1.016" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
 <wire x1="-7.7434" y1="3.8862" x2="-7.7434" y2="5.0038" width="0.127" layer="21"/>
 <wire x1="7.9284" y1="3.8862" x2="-7.7434" y2="3.8862" width="0.127" layer="21"/>
-<circle x="-7.7434" y="5.0038" radius="1.1" width="0.127" layer="21"/>
 <circle x="-5.94" y="0" radius="0.8509" width="0.127" layer="21"/>
 <hole x="3.96" y="-4.24" drill="1.6"/>
 <hole x="-3.96" y="-4.24" drill="1.6"/>
@@ -5935,9 +5934,164 @@
 <text x="2" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL02</text>
 <text x="5.96" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
 </package>
+<package name="26-64-4040(KEYPIN2)">
+<pad name="4" x="5.94" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="3" x="1.98" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="1" x="-5.94" y="0" drill="1.7018" shape="long" rot="R90"/>
+<wire x1="-7.7434" y1="5.0038" x2="7.9284" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="5.0038" x2="7.9284" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="3.8862" x2="7.9284" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="-5.0038" x2="-7.7434" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="-7.7434" y1="-5.0038" x2="-7.7434" y2="3.8862" width="0.127" layer="21"/>
+<text x="0" y="14.42" size="1.016" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-7.7434" y1="3.8862" x2="-7.7434" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="3.8862" x2="-7.7434" y2="3.8862" width="0.127" layer="21"/>
+<circle x="-1.98" y="0" radius="0.8509" width="0.127" layer="21"/>
+<hole x="3.96" y="-4.24" drill="1.6"/>
+<hole x="-3.96" y="-4.24" drill="1.6"/>
+<text x="-5.92" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL01</text>
+<text x="2" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL02</text>
+<text x="5.96" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+</package>
+<package name="26-64-4040(KEYPIN3)">
+<pad name="4" x="5.94" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="2" x="-1.98" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="1" x="-5.94" y="0" drill="1.7018" shape="long" rot="R90"/>
+<wire x1="-7.7434" y1="5.0038" x2="7.9284" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="5.0038" x2="7.9284" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="3.8862" x2="7.9284" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="-5.0038" x2="-7.7434" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="-7.7434" y1="-5.0038" x2="-7.7434" y2="3.8862" width="0.127" layer="21"/>
+<text x="0" y="14.42" size="1.016" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-7.7434" y1="3.8862" x2="-7.7434" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="3.8862" x2="-7.7434" y2="3.8862" width="0.127" layer="21"/>
+<circle x="1.98" y="0" radius="0.8509" width="0.127" layer="21"/>
+<hole x="3.96" y="-4.24" drill="1.6"/>
+<hole x="-3.96" y="-4.24" drill="1.6"/>
+<text x="-5.92" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL01</text>
+<text x="-1.96" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL02</text>
+<text x="5.96" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+</package>
+<package name="26-64-4040(KEYPIN4)">
+<pad name="3" x="1.98" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="2" x="-1.98" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="1" x="-5.94" y="0" drill="1.7018" shape="long" rot="R90"/>
+<wire x1="-7.7434" y1="5.0038" x2="7.9284" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="5.0038" x2="7.9284" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="3.8862" x2="7.9284" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="-5.0038" x2="-7.7434" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="-7.7434" y1="-5.0038" x2="-7.7434" y2="3.8862" width="0.127" layer="21"/>
+<text x="0" y="14.42" size="1.016" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-7.7434" y1="3.8862" x2="-7.7434" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="7.9284" y1="3.8862" x2="-7.7434" y2="3.8862" width="0.127" layer="21"/>
+<circle x="5.94" y="0" radius="0.8509" width="0.127" layer="21"/>
+<hole x="3.96" y="-4.24" drill="1.6"/>
+<hole x="-3.96" y="-4.24" drill="1.6"/>
+<text x="-5.92" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL01</text>
+<text x="-1.96" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL02</text>
+<text x="2" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+</package>
+<package name="26-64-4030">
+<pad name="3" x="3.96" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="1" x="-3.96" y="0" drill="1.7018" shape="long" rot="R90"/>
+<wire x1="-5.865" y1="5" x2="5.865" y2="5" width="0.127" layer="21"/>
+<wire x1="5.865" y1="5" x2="5.865" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="5.865" y1="3.8862" x2="5.865" y2="-5" width="0.127" layer="21"/>
+<wire x1="5.865" y1="-5" x2="-5.865" y2="-5" width="0.127" layer="21"/>
+<wire x1="-5.865" y1="-5" x2="-5.865" y2="3.8862" width="0.127" layer="21"/>
+<text x="0" y="14.385" size="0.8128" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
+<wire x1="-5.865" y1="3.8862" x2="-5.865" y2="5" width="0.127" layer="21"/>
+<wire x1="5.865" y1="3.8862" x2="-5.865" y2="3.8862" width="0.127" layer="21"/>
+<text x="-3.96" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL01</text>
+<text x="0" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL02</text>
+<text x="3.96" y="6" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL03</text>
+<hole x="-1.98" y="-4.24" drill="1.63"/>
+<hole x="1.98" y="-4.24" drill="1.63"/>
+</package>
+<package name="2.54MM_01X06_PIN_HEADER">
+<description>6 pin header</description>
+<pad name="1" x="-6.35" y="0" drill="0.8" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="0.8" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="0.8" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="0.8" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="0.8" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="0.8" rot="R90"/>
+<wire x1="-7.62" y1="1.27" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="1.27" width="0.127" layer="21"/>
+<wire x1="7.62" y1="1.27" x2="-7.62" y2="1.27" width="0.127" layer="21"/>
+<circle x="-7.62" y="-1.27" radius="0.3175" width="0.127" layer="21"/>
+<text x="-7.62" y="1.5875" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
+<text x="6.35" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL06</text>
+<text x="3.81" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL05</text>
+<text x="1.27" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL04</text>
+<text x="-1.27" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL03</text>
+<text x="-3.81" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right">&gt;LABEL02</text>
+<text x="-6.35" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right">&gt;LABEL01</text>
+</package>
+<package name="HFW6R-2STE1LF">
+<smd name="3" x="-0.5" y="0" dx="0.6" dy="2" layer="1" rot="R180"/>
+<smd name="2" x="-1.5" y="0" dx="0.6" dy="2" layer="1" rot="R180"/>
+<smd name="1" x="-2.5" y="0" dx="0.6" dy="2" layer="1" rot="R180"/>
+<smd name="4" x="0.5" y="0" dx="0.6" dy="2" layer="1" rot="R180"/>
+<smd name="5" x="1.5" y="0" dx="0.6" dy="2" layer="1" rot="R180"/>
+<smd name="6" x="2.5" y="0" dx="0.6" dy="2" layer="1" rot="R180"/>
+<smd name="PAD1" x="3.5" y="-2.1" dx="0.6" dy="4.2" layer="1" rot="R180"/>
+<smd name="PAD0" x="-3.5" y="-2.1" dx="0.6" dy="4.2" layer="1" rot="R180"/>
+<wire x1="4.3" y1="-0.5" x2="-4.3" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-6" x2="-4.3" y2="-6" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="-0.5" x2="-4.3" y2="-6" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-0.5" x2="4.3" y2="-6" width="0.127" layer="21"/>
+<text x="-4.5" y="-6" size="0.8128" layer="25" font="vector" ratio="16" rot="R90">&gt;NAME</text>
+</package>
+<package name="NC5FBH">
+<pad name="2" x="0" y="-13.335" drill="1.2"/>
+<pad name="3" x="0" y="-17.15" drill="1.2"/>
+<pad name="5" x="3.81" y="-17.15" drill="1.6"/>
+<pad name="1" x="-3.81" y="-17.15" drill="1.6"/>
+<pad name="4" x="6.98" y="-13.335" drill="1.2"/>
+<pad name="P$6" x="3.81" y="-8.89" drill="1.6"/>
+<pad name="P$7" x="-3.81" y="-3.81" drill="1.6"/>
+<pad name="GND" x="-8.25" y="-6.98" drill="1.2"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="0" x2="12.5" y2="0" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="-19.5" x2="12.5" y2="-19.5" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="0" x2="-12.5" y2="-19.5" width="0.127" layer="21"/>
+<wire x1="12.5" y1="0" x2="12.5" y2="-19.5" width="0.127" layer="21"/>
+<text x="-12.7" y="-21.59" size="0.8128" layer="21" font="vector">&gt;NAME</text>
+</package>
+<package name="5103308-2">
+<pad name="1" x="7.62" y="1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="2" x="7.62" y="-1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="3" x="5.08" y="1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="4" x="5.08" y="-1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="5" x="2.54" y="1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="6" x="2.54" y="-1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="7" x="0" y="1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="8" x="0" y="-1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="9" x="-2.54" y="1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="10" x="-2.54" y="-1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="11" x="-5.08" y="1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="12" x="-5.08" y="-1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="13" x="-7.62" y="1.27" drill="0.9" shape="square" rot="R180"/>
+<pad name="14" x="-7.62" y="-1.27" drill="0.9" shape="square" rot="R180"/>
+<wire x1="12.7" y1="-4.572" x2="12.7" y2="4.572" width="0.127" layer="21"/>
+<wire x1="12.7" y1="4.572" x2="-12.7" y2="4.572" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="4.572" x2="-12.7" y2="-4.572" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-4.572" x2="12.7" y2="-4.572" width="0.127" layer="21"/>
+<text x="-12.7" y="-6.35" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="2.54" y="5.08"/>
+<vertex x="2.54" y="3.81"/>
+<vertex x="-2.54" y="3.81"/>
+<vertex x="-2.54" y="5.08"/>
+</polygon>
+<text x="7.62" y="5.08" size="0.8128" layer="21" font="vector" ratio="16" align="center">1</text>
+</package>
 </packages>
 <symbols>
-<symbol name="SMT_02X05">
+<symbol name="CON_02X05">
 <pin name="PIN1" x="-2.54" y="0" visible="off" length="short"/>
 <text x="7.62" y="0" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL01</text>
 <wire x1="0" y1="-11.43" x2="30.48" y2="-11.43" width="0.127" layer="94"/>
@@ -5975,131 +6129,105 @@
 <text x="22.86" y="-10.16" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL10</text>
 <pin name="PIN10" x="33.02" y="-10.16" visible="off" length="short" rot="R180"/>
 </symbol>
-<symbol name="SMT_02X15">
+<symbol name="CON_02X15">
 <pin name="PIN1" x="33.02" y="0" visible="off" length="short" rot="R180"/>
-<text x="22.86" y="0" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL01</text>
+<text x="7.366" y="0" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL01</text>
 <wire x1="0" y1="-36.83" x2="30.48" y2="-36.83" width="0.127" layer="94"/>
 <pin name="PIN0" x="-2.54" y="0" visible="off" length="short"/>
-<text x="7.62" y="0" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL00</text>
 <wire x1="0" y1="1.27" x2="0" y2="-36.83" width="0.127" layer="94"/>
 <wire x1="30.48" y1="-36.83" x2="30.48" y2="1.27" width="0.127" layer="94"/>
 <wire x1="30.48" y1="1.27" x2="0" y2="1.27" width="0.127" layer="94"/>
 <text x="0" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
 <text x="0" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
 <pin name="PIN2" x="-2.54" y="-2.54" visible="off" length="short"/>
-<text x="7.62" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL02</text>
-<text x="0.508" y="0" size="1.016" layer="97" font="vector" align="center-left">PIN00</text>
-<text x="30.48" y="0" size="1.016" layer="97" font="vector" rot="R180" align="center-left">PIN01</text>
-<text x="0.508" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">PIN02</text>
+<text x="22.606" y="0" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL02</text>
+<text x="1.016" y="0" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">PIN01</text>
+<text x="29.718" y="0" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">PIN02</text>
 <pin name="PIN3" x="33.02" y="-2.54" visible="off" length="short" rot="R180"/>
-<text x="22.86" y="-2.54" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL03</text>
-<text x="30.48" y="-2.54" size="1.016" layer="97" font="vector" align="center-right">PIN03</text>
+<text x="7.366" y="-2.54" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL03</text>
+<text x="1.016" y="-2.54" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN03</text>
 <pin name="PIN4" x="-2.54" y="-5.08" visible="off" length="short"/>
 <pin name="PIN5" x="33.02" y="-5.08" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-5.08" size="1.016" layer="97" font="vector" align="center-right">PIN05</text>
-<text x="7.62" y="-5.08" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL04</text>
-<text x="22.86" y="-5.08" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL05</text>
-<text x="0.508" y="-5.08" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN04</text>
+<text x="1.016" y="-5.08" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN05</text>
+<text x="22.606" y="-2.54" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL04</text>
+<text x="7.366" y="-5.08" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL05</text>
+<text x="29.718" y="-2.54" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN04</text>
 <pin name="PIN6" x="-2.54" y="-7.62" visible="off" length="short"/>
 <pin name="PIN7" x="33.02" y="-7.62" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-7.62" size="1.016" layer="97" font="vector" align="center-right">PIN07</text>
-<text x="7.62" y="-7.62" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL06</text>
-<text x="22.86" y="-7.62" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL07</text>
-<text x="0.508" y="-7.62" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN06</text>
+<text x="1.016" y="-7.62" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN07</text>
+<text x="22.606" y="-5.08" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL06</text>
+<text x="7.366" y="-7.62" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL07</text>
+<text x="29.718" y="-5.08" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN06</text>
 <pin name="PIN8" x="-2.54" y="-10.16" visible="off" length="short"/>
 <pin name="PIN9" x="33.02" y="-10.16" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-10.16" size="1.016" layer="97" font="vector" align="center-right">PIN09</text>
-<text x="7.62" y="-10.16" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL08</text>
-<text x="22.86" y="-10.16" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL09</text>
-<text x="0.508" y="-10.16" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN08</text>
+<text x="1.016" y="-10.16" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN09</text>
+<text x="22.606" y="-7.62" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL08</text>
+<text x="7.366" y="-10.16" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL09</text>
+<text x="29.718" y="-7.62" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN08</text>
 <pin name="PIN10" x="-2.54" y="-12.7" visible="off" length="short"/>
-<text x="22.86" y="-12.7" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL11</text>
+<text x="7.366" y="-12.7" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL11</text>
 <pin name="PIN11" x="33.02" y="-12.7" visible="off" length="short" rot="R180"/>
-<text x="7.62" y="-12.7" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL10</text>
+<text x="22.606" y="-10.16" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL10</text>
 <pin name="PIN12" x="-2.54" y="-15.24" visible="off" length="short"/>
-<text x="7.62" y="-15.24" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL12</text>
-<text x="0.508" y="-12.7" size="1.016" layer="97" font="vector" align="center-left">PIN10</text>
-<text x="30.48" y="-12.7" size="1.016" layer="97" font="vector" rot="R180" align="center-left">PIN11</text>
-<text x="0.508" y="-15.24" size="1.016" layer="97" font="vector" align="center-left">PIN12</text>
+<text x="22.606" y="-12.7" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL12</text>
+<text x="29.718" y="-10.16" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">PIN10</text>
+<text x="1.016" y="-12.7" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">PIN11</text>
+<text x="29.718" y="-12.7" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">PIN12</text>
 <pin name="PIN13" x="33.02" y="-15.24" visible="off" length="short" rot="R180"/>
-<text x="22.86" y="-15.24" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL13</text>
-<text x="30.48" y="-15.24" size="1.016" layer="97" font="vector" align="center-right">PIN13</text>
+<text x="7.366" y="-15.24" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL13</text>
+<text x="1.016" y="-15.24" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN13</text>
 <pin name="PIN14" x="-2.54" y="-17.78" visible="off" length="short"/>
 <pin name="PIN15" x="33.02" y="-17.78" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-17.78" size="1.016" layer="97" font="vector" align="center-right">PIN15</text>
-<text x="7.62" y="-17.78" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL14</text>
-<text x="22.86" y="-17.78" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL15</text>
-<text x="0.508" y="-17.78" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN14</text>
+<text x="1.016" y="-17.78" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN15</text>
+<text x="22.606" y="-15.24" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL14</text>
+<text x="7.366" y="-17.78" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL15</text>
+<text x="29.718" y="-15.24" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN14</text>
 <pin name="PIN16" x="-2.54" y="-20.32" visible="off" length="short"/>
 <pin name="PIN17" x="33.02" y="-20.32" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-20.32" size="1.016" layer="97" font="vector" align="center-right">PIN17</text>
-<text x="7.62" y="-20.32" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL16</text>
-<text x="22.86" y="-20.32" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL17</text>
-<text x="0.508" y="-20.32" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN16</text>
+<text x="1.016" y="-20.32" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN17</text>
+<text x="22.606" y="-17.78" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL16</text>
+<text x="7.366" y="-20.32" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL17</text>
+<text x="29.718" y="-17.78" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN16</text>
 <pin name="PIN18" x="-2.54" y="-22.86" visible="off" length="short"/>
 <pin name="PIN19" x="33.02" y="-22.86" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-22.86" size="1.016" layer="97" font="vector" align="center-right">PIN19</text>
-<text x="7.62" y="-22.86" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL18</text>
-<text x="22.86" y="-22.86" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL19</text>
-<text x="0.508" y="-22.86" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN18</text>
+<text x="1.016" y="-22.86" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN19</text>
+<text x="22.606" y="-20.32" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL18</text>
+<text x="7.366" y="-22.86" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL19</text>
+<text x="29.718" y="-20.32" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN18</text>
 <pin name="PIN20" x="-2.54" y="-25.4" visible="off" length="short"/>
-<text x="22.86" y="-25.4" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL21</text>
+<text x="7.366" y="-25.4" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL21</text>
 <pin name="PIN21" x="33.02" y="-25.4" visible="off" length="short" rot="R180"/>
-<text x="7.62" y="-25.4" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL20</text>
+<text x="22.606" y="-22.86" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL20</text>
 <pin name="PIN22" x="-2.54" y="-27.94" visible="off" length="short"/>
-<text x="7.62" y="-27.94" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL22</text>
-<text x="0.508" y="-25.4" size="1.016" layer="97" font="vector" align="center-left">PIN20</text>
-<text x="30.48" y="-25.4" size="1.016" layer="97" font="vector" rot="R180" align="center-left">PIN21</text>
-<text x="0.508" y="-27.94" size="1.016" layer="97" font="vector" align="center-left">PIN22</text>
+<text x="22.606" y="-25.4" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL22</text>
+<text x="29.718" y="-22.86" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">PIN20</text>
+<text x="1.016" y="-25.4" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">PIN21</text>
+<text x="29.718" y="-25.4" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">PIN22</text>
 <pin name="PIN23" x="33.02" y="-27.94" visible="off" length="short" rot="R180"/>
-<text x="22.86" y="-27.94" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL23</text>
-<text x="30.48" y="-27.94" size="1.016" layer="97" font="vector" align="center-right">PIN23</text>
+<text x="7.366" y="-27.94" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL23</text>
+<text x="1.016" y="-27.94" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN23</text>
 <pin name="PIN24" x="-2.54" y="-30.48" visible="off" length="short"/>
 <pin name="PIN25" x="33.02" y="-30.48" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-30.48" size="1.016" layer="97" font="vector" align="center-right">PIN25</text>
-<text x="7.62" y="-30.48" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL24</text>
-<text x="22.86" y="-30.48" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL25</text>
-<text x="0.508" y="-30.48" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN24</text>
+<text x="1.016" y="-30.48" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN25</text>
+<text x="22.606" y="-27.94" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL24</text>
+<text x="7.366" y="-30.48" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL25</text>
+<text x="29.718" y="-27.94" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN24</text>
 <pin name="PIN26" x="-2.54" y="-33.02" visible="off" length="short"/>
 <pin name="PIN27" x="33.02" y="-33.02" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-33.02" size="1.016" layer="97" font="vector" align="center-right">PIN27</text>
-<text x="7.62" y="-33.02" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL26</text>
-<text x="22.86" y="-33.02" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL27</text>
-<text x="0.508" y="-33.02" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN26</text>
+<text x="1.016" y="-33.02" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN27</text>
+<text x="22.606" y="-30.48" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL26</text>
+<text x="7.366" y="-33.02" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL27</text>
+<text x="29.718" y="-30.48" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN26</text>
 <pin name="PIN28" x="-2.54" y="-35.56" visible="off" length="short"/>
 <pin name="PIN29" x="33.02" y="-35.56" visible="off" length="short" rot="R180"/>
-<text x="30.48" y="-35.56" size="1.016" layer="97" font="vector" align="center-right">PIN29</text>
-<text x="7.62" y="-35.56" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL28</text>
-<text x="22.86" y="-35.56" size="1.016" layer="97" font="vector" rot="R180" align="center-left">&gt;LABEL29</text>
-<text x="0.508" y="-35.56" size="1.016" layer="97" font="vector" rot="R180" align="center-right">PIN28</text>
+<text x="1.016" y="-35.56" size="1.016" layer="97" font="vector" rot="MR0" align="center-right">PIN29</text>
+<text x="22.606" y="-33.02" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL28</text>
+<text x="7.366" y="-35.56" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL29</text>
+<text x="29.718" y="-33.02" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN28</text>
+<text x="22.606" y="-35.56" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">&gt;LABEL30</text>
+<text x="29.718" y="-35.56" size="1.016" layer="97" font="vector" rot="MR180" align="center-right">PIN30</text>
 </symbol>
-<symbol name="SMT_01X06">
-<pin name="PIN1" x="-2.54" y="-2.54" visible="off" length="short"/>
-<wire x1="0" y1="-13.97" x2="16.51" y2="-13.97" width="0.127" layer="94"/>
-<pin name="PIN0" x="-2.54" y="0" visible="off" length="short"/>
-<wire x1="0" y1="1.27" x2="0" y2="-13.97" width="0.127" layer="94"/>
-<wire x1="16.51" y1="-13.97" x2="16.51" y2="1.27" width="0.127" layer="94"/>
-<wire x1="16.51" y1="1.27" x2="0" y2="1.27" width="0.127" layer="94"/>
-<text x="0" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
-<text x="0" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
-<pin name="PIN2" x="-2.54" y="-5.08" visible="off" length="short"/>
-<pin name="PIN3" x="-2.54" y="-7.62" visible="off" length="short"/>
-<pin name="PIN4" x="-2.54" y="-10.16" visible="off" length="short"/>
-<pin name="PIN5" x="-2.54" y="-12.7" visible="off" length="short"/>
-<text x="7.62" y="-12.7" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL05</text>
-<text x="7.62" y="-10.16" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL04</text>
-<text x="7.62" y="-7.62" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL03</text>
-<text x="7.62" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL01</text>
-<text x="7.62" y="0" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL00</text>
-<text x="7.62" y="-5.08" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL02</text>
-<text x="0.508" y="0" size="1.016" layer="97" font="vector" align="center-left">PIN00</text>
-<text x="0.508" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">PIN01</text>
-<text x="0.508" y="-5.08" size="1.016" layer="97" font="vector" align="center-left">PIN02</text>
-<text x="0.508" y="-7.62" size="1.016" layer="97" font="vector" align="center-left">PIN03</text>
-<text x="0.508" y="-10.16" size="1.016" layer="97" font="vector" align="center-left">PIN04</text>
-<text x="0.508" y="-12.7" size="1.016" layer="97" font="vector" align="center-left">PIN05</text>
-</symbol>
-<symbol name="SMT_02X07">
+<symbol name="CON_02X07">
 <pin name="PIN1" x="-2.54" y="0" visible="off" length="short"/>
 <text x="7.62" y="0" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">&gt;LABEL01</text>
 <wire x1="0" y1="-16.51" x2="30.48" y2="-16.51" width="0.127" layer="94"/>
@@ -6167,14 +6295,41 @@
 <text x="0.508" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">PIN02</text>
 <text x="0.508" y="-5.08" size="1.016" layer="97" font="vector" align="center-left">PIN03</text>
 </symbol>
+<symbol name="CON_01X06">
+<description>Symbol for 6 pin connectors</description>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="3" x="-2.54" y="-5.08" visible="off" length="short" direction="pas"/>
+<pin name="4" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
+<pin name="5" x="-2.54" y="-10.16" visible="off" length="short" direction="pas"/>
+<pin name="6" x="-2.54" y="-12.7" visible="off" length="short" direction="pas"/>
+<wire x1="0" y1="-13.97" x2="16.51" y2="-13.97" width="0.127" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="-13.97" width="0.127" layer="94"/>
+<wire x1="16.51" y1="-13.97" x2="16.51" y2="1.27" width="0.127" layer="94"/>
+<wire x1="16.51" y1="1.27" x2="0" y2="1.27" width="0.127" layer="94"/>
+<text x="0" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="0" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+<text x="7.62" y="-10.16" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL05</text>
+<text x="7.62" y="-7.62" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL04</text>
+<text x="7.62" y="-5.08" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL03</text>
+<text x="7.62" y="0" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL01</text>
+<text x="7.62" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL02</text>
+<text x="0.508" y="0" size="1.016" layer="97" font="vector" align="center-left">PIN01</text>
+<text x="0.508" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">PIN02</text>
+<text x="0.508" y="-5.08" size="1.016" layer="97" font="vector" align="center-left">PIN03</text>
+<text x="0.508" y="-7.62" size="1.016" layer="97" font="vector" align="center-left">PIN04</text>
+<text x="0.508" y="-10.16" size="1.016" layer="97" font="vector" align="center-left">PIN05</text>
+<text x="7.62" y="-12.7" size="1.016" layer="97" font="vector" align="center-left">&gt;LABEL06</text>
+<text x="0.508" y="-12.7" size="1.016" layer="97" font="vector" align="center-left">PIN06</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="15-91-1102" prefix="J" uservalue="yes">
+<deviceset name="CON_02X05" prefix="J" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="SMT_02X05" x="0" y="0"/>
+<gate name="G$1" symbol="CON_02X05" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="15-91-1102">
+<device name="_15-91-1102" package="15-91-1102">
 <connects>
 <connect gate="G$1" pin="PIN1" pad="1"/>
 <connect gate="G$1" pin="PIN10" pad="10"/>
@@ -6204,12 +6359,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="87832-6422" prefix="J" uservalue="yes">
+<deviceset name="CON_02X15" prefix="J" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="SMT_02X15" x="0" y="0"/>
+<gate name="G$1" symbol="CON_02X15" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="87832-6422">
+<device name="_87832-6422" package="87832-6422">
 <connects>
 <connect gate="G$1" pin="PIN0" pad="P$1"/>
 <connect gate="G$1" pin="PIN1" pad="P$2"/>
@@ -6244,7 +6399,6 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="LABEL00" value="" constant="no"/>
 <attribute name="LABEL01" value="" constant="no"/>
 <attribute name="LABEL02" value="" constant="no"/>
 <attribute name="LABEL03" value="" constant="no"/>
@@ -6274,44 +6428,18 @@
 <attribute name="LABEL27" value="" constant="no"/>
 <attribute name="LABEL28" value="" constant="no"/>
 <attribute name="LABEL29" value="" constant="no"/>
+<attribute name="LABEL30" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1775470-6" prefix="J" uservalue="yes">
+<deviceset name="CON_02X07" prefix="J" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="SMT_01X06" x="0" y="0"/>
+<gate name="G$1" symbol="CON_02X07" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1775470-6">
-<connects>
-<connect gate="G$1" pin="PIN0" pad="P$1"/>
-<connect gate="G$1" pin="PIN1" pad="P$2"/>
-<connect gate="G$1" pin="PIN2" pad="P$3"/>
-<connect gate="G$1" pin="PIN3" pad="P$4"/>
-<connect gate="G$1" pin="PIN4" pad="P$5"/>
-<connect gate="G$1" pin="PIN5" pad="P$6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="LABEL00" value="" constant="no"/>
-<attribute name="LABEL01" value="" constant="no"/>
-<attribute name="LABEL02" value="" constant="no"/>
-<attribute name="LABEL03" value="" constant="no"/>
-<attribute name="LABEL04" value="" constant="no"/>
-<attribute name="LABEL05" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SMT_02X07" prefix="J" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="SMT_02X07" x="0" y="0"/>
-</gates>
-<devices>
-<device name="D2514-6V0C-AR-WD" package="D2514-6V0C-AR-WD">
+<device name="_D2514-6V0C-AR-WD" package="D2514-6V0C-AR-WD">
 <connects>
 <connect gate="G$1" pin="PIN1" pad="1"/>
 <connect gate="G$1" pin="PIN10" pad="10"/>
@@ -6347,6 +6475,27 @@
 </technology>
 </technologies>
 </device>
+<device name="_5103308-2" package="5103308-2">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="1"/>
+<connect gate="G$1" pin="PIN10" pad="10"/>
+<connect gate="G$1" pin="PIN11" pad="11"/>
+<connect gate="G$1" pin="PIN12" pad="12"/>
+<connect gate="G$1" pin="PIN13" pad="13"/>
+<connect gate="G$1" pin="PIN14" pad="14"/>
+<connect gate="G$1" pin="PIN2" pad="2"/>
+<connect gate="G$1" pin="PIN3" pad="3"/>
+<connect gate="G$1" pin="PIN4" pad="4"/>
+<connect gate="G$1" pin="PIN5" pad="5"/>
+<connect gate="G$1" pin="PIN6" pad="6"/>
+<connect gate="G$1" pin="PIN7" pad="7"/>
+<connect gate="G$1" pin="PIN8" pad="8"/>
+<connect gate="G$1" pin="PIN9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CON_01X03" prefix="J" uservalue="yes">
@@ -6355,7 +6504,7 @@
 <gate name="G$1" symbol="CON_01X03" x="0" y="0"/>
 </gates>
 <devices>
-<device name="26-64-4040(KEYPIN1)" package="26-64-4040(KEYPIN1)">
+<device name="_26-64-4040_(KEYPIN1)" package="26-64-4040(KEYPIN1)">
 <connects>
 <connect gate="G$1" pin="PIN1" pad="2"/>
 <connect gate="G$1" pin="PIN2" pad="3"/>
@@ -6366,6 +6515,143 @@
 <attribute name="LABEL01" value="" constant="no"/>
 <attribute name="LABEL02" value="" constant="no"/>
 <attribute name="LABEL03" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4040_(KEYPIN2)" package="26-64-4040(KEYPIN2)">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="1"/>
+<connect gate="G$1" pin="PIN2" pad="3"/>
+<connect gate="G$1" pin="PIN3" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4040_(KEYPIN3)" package="26-64-4040(KEYPIN3)">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="1"/>
+<connect gate="G$1" pin="PIN2" pad="2"/>
+<connect gate="G$1" pin="PIN3" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4040_(KEYPIN4)" package="26-64-4040(KEYPIN4)">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="1"/>
+<connect gate="G$1" pin="PIN2" pad="2"/>
+<connect gate="G$1" pin="PIN3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_26-64-4030" package="26-64-4030">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="1"/>
+<connect gate="G$1" pin="PIN2" pad="2"/>
+<connect gate="G$1" pin="PIN3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON_01X06" prefix="J" uservalue="yes">
+<description>6 pin connectors</description>
+<gates>
+<gate name="G$1" symbol="CON_01X06" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_2.54MM_PIN_HEADER" package="2.54MM_01X06_PIN_HEADER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+<attribute name="LABEL05" value="" constant="no"/>
+<attribute name="LABEL6" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_HFW6R-2STE1LF" package="HFW6R-2STE1LF">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+<attribute name="LABEL05" value="" constant="no"/>
+<attribute name="LABEL06" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_NC5FBH" package="NC5FBH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_1775470-6" package="1775470-6">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL01" value="" constant="no"/>
+<attribute name="LABEL02" value="" constant="no"/>
+<attribute name="LABEL03" value="" constant="no"/>
+<attribute name="LABEL04" value="" constant="no"/>
+<attribute name="LABEL05" value="" constant="no"/>
+<attribute name="LABEL06" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7377,7 +7663,7 @@
 <part name="U$2" library="PP_Aesthetics" deviceset="MF_LOGO" device="LOGO_MEDIUM" value="MF_LOGOLOGO_MEDIUM"/>
 <part name="U$3" library="PP_Aesthetics" deviceset="LHE_LOGO" device="LHE_LOGO"/>
 <part name="U1" library="PP_DigitalIC" deviceset="EP4CE6E22C8N" device="" value="EP4CE6E22C8N"/>
-<part name="J1" library="PP_Connectors" deviceset="15-91-1102" device="" value="15-91-1102">
+<part name="J1" library="PP_Connectors" deviceset="CON_02X05" device="_15-91-1102" value="15-91-1102">
 <attribute name="LABEL01" value="TCK"/>
 <attribute name="LABEL02" value="GND"/>
 <attribute name="LABEL03" value="TDO"/>
@@ -7419,14 +7705,13 @@
 <part name="R11" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
 <part name="X1" library="PP_FreqCtrl" deviceset="ASDMB" device="" value="ASDMB-50.000MHZ-LC-T"/>
 <part name="C21" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.01uF"/>
-<part name="J2" library="PP_Connectors" deviceset="87832-6422" device="" value="87832-6422"/>
-<part name="J3" library="PP_Connectors" deviceset="1775470-6" device="" value="1775470-6"/>
+<part name="J2" library="PP_Connectors" deviceset="CON_02X15" device="_87832-6422" value="87832-6422"/>
 <part name="C22" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="C23" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="!CONFIG" library="MF_Switches" deviceset="TACT" device="_4.2MM"/>
 <part name="!RESET" library="MF_Switches" deviceset="TACT" device="_4.2MM"/>
 <part name="R7" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
-<part name="J4" library="PP_Connectors" deviceset="SMT_02X07" device="D2514-6V0C-AR-WD" value="D2514-6V0C-AR-WD"/>
+<part name="J4" library="PP_Connectors" deviceset="CON_02X07" device="_D2514-6V0C-AR-WD" value="D2514-6V0C-AR-WD"/>
 <part name="C10" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="C11" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="0.1uF"/>
 <part name="C15" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603" value="10uF"/>
@@ -7497,11 +7782,12 @@
 <part name="FID2" library="MF_Aesthetics" deviceset="FIDUCIAL" device="_100MIL"/>
 <part name="FID3" library="MF_Aesthetics" deviceset="FIDUCIAL" device="_0.5MM"/>
 <part name="FID4" library="MF_Aesthetics" deviceset="FIDUCIAL" device="_0.5MM"/>
-<part name="J7" library="PP_Connectors" deviceset="CON_01X03" device="26-64-4040(KEYPIN1)" value="26-64-4040">
+<part name="J7" library="PP_Connectors" deviceset="CON_01X03" device="_26-64-4040_(KEYPIN1)" value="26-64-4040">
 <attribute name="LABEL01" value="12V"/>
 <attribute name="LABEL02" value="5V"/>
 <attribute name="LABEL03" value="GND"/>
 </part>
+<part name="J3" library="PP_Connectors" deviceset="CON_01X06" device="_1775470-6" value="1775470-6"/>
 </parts>
 <sheets>
 <sheet>
@@ -7563,7 +7849,6 @@
 <instance part="X1" gate="G$1" x="-213.36" y="73.66"/>
 <instance part="C21" gate="G$1" x="-187.96" y="71.12"/>
 <instance part="J2" gate="G$1" x="-63.5" y="124.46"/>
-<instance part="J3" gate="G$1" x="-27.94" y="167.64"/>
 <instance part="C22" gate="G$1" x="-182.88" y="99.06"/>
 <instance part="C23" gate="G$1" x="-241.3" y="17.78"/>
 <instance part="!CONFIG" gate="G$1" x="-116.84" y="76.2"/>
@@ -7619,6 +7904,7 @@
 <instance part="FID3" gate="G$1" x="-27.94" y="35.56"/>
 <instance part="FID4" gate="G$1" x="-27.94" y="30.48"/>
 <instance part="J7" gate="G$1" x="-111.76" y="35.56"/>
+<instance part="J3" gate="G$1" x="-27.94" y="167.64"/>
 </instances>
 <busses>
 </busses>
@@ -7933,14 +8219,14 @@
 <label x="-27.94" y="93.98" size="1.27" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="PIN1"/>
 <wire x1="-38.1" y1="165.1" x2="-30.48" y2="165.1" width="0.1524" layer="91"/>
 <label x="-38.1" y="165.1" size="1.27" layer="95" font="vector"/>
+<pinref part="J3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="PIN0"/>
 <wire x1="-30.48" y1="167.64" x2="-38.1" y2="167.64" width="0.1524" layer="91"/>
 <label x="-38.1" y="167.64" size="1.27" layer="95" font="vector"/>
+<pinref part="J3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="!CONFIG" gate="G$1" pin="P$4"/>
@@ -8536,9 +8822,9 @@
 </net>
 <net name="PWM/EN" class="0">
 <segment>
-<pinref part="J3" gate="G$1" pin="PIN3"/>
 <wire x1="-38.1" y1="160.02" x2="-30.48" y2="160.02" width="0.1524" layer="91"/>
 <label x="-38.1" y="160.02" size="1.27" layer="95" font="vector"/>
+<pinref part="J3" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="10"/>
@@ -8866,14 +9152,14 @@
 </net>
 <net name="12V" class="0">
 <segment>
-<pinref part="J3" gate="G$1" pin="PIN4"/>
 <wire x1="-30.48" y1="157.48" x2="-38.1" y2="157.48" width="0.1524" layer="91"/>
 <label x="-38.1" y="157.48" size="1.27" layer="95" font="vector"/>
+<pinref part="J3" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="PIN5"/>
 <wire x1="-38.1" y1="154.94" x2="-30.48" y2="154.94" width="0.1524" layer="91"/>
 <label x="-38.1" y="154.94" size="1.27" layer="95" font="vector"/>
+<pinref part="J3" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="-114.3" y1="35.56" x2="-124.46" y2="35.56" width="0.1524" layer="91"/>

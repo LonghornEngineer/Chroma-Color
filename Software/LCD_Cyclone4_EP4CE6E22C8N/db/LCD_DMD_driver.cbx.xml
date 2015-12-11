@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="LCD_DMD_driver">
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult5|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult4|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult5|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|clocks:u1|altpll:altpll_component" CBX_FILE_NAME="clocks_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult4|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|ram:u2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rrl1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -181,9 +181,9 @@ begin
 					begin
 						if (vCurrent < (settings[0] + vFront))								//White top portion? All white pixels (no shapes) We don't care															
 							begin
-								redO <= 63;
-								greenO <= 63;
-								blueO <= 63;							
+								redO <= 62;
+								greenO <= 62;
+								blueO <= 62;							
 									
 								redE <= 63;
 								greenE <= 63;

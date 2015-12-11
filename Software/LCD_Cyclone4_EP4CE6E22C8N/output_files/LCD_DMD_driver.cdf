@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6) Path("C:/Users/MacroFab_00/Documents/GitHub/Chroma-Color/Software/LCD_Cyclone4_EP4CE6E22C8N/output_files/") File("output_file.jic") MfrSpec(OpMask(1) SEC_Device(EPCS4) Child_OpMask(1 1));
+		Device PartName(EP4CE6) Path("C:/Users/MacroFab_00/Documents/GitHub/Chroma-Color/Software/LCD_Cyclone4_EP4CE6E22C8N/output_files/") File("test2.jic") MfrSpec(OpMask(1) SEC_Device(EPCS4) Child_OpMask(1 1));
 
 ChainEnd;
 

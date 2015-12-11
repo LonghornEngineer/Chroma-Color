@@ -2015,7 +2015,7 @@
 </library>
 <library name="PP_PowerIC">
 <packages>
-<package name="SOT-223B">
+<package name="ADP3338_SOT-223-3">
 <smd name="1" x="-2.3" y="-2.54" dx="2" dy="1.1" layer="1" rot="R90"/>
 <smd name="2" x="0" y="-2.54" dx="2" dy="1.1" layer="1" rot="R90"/>
 <smd name="3" x="2.3" y="-2.54" dx="2" dy="1.1" layer="1" rot="R90"/>
@@ -2024,7 +2024,18 @@
 <wire x1="-4" y1="-4.04" x2="4" y2="-4.04" width="0.127" layer="21"/>
 <wire x1="4" y1="-4.04" x2="4" y2="4.96" width="0.127" layer="21"/>
 <wire x1="4" y1="4.96" x2="-4" y2="4.96" width="0.127" layer="21"/>
-<text x="-4" y="5.46" size="0.8128" layer="21" font="vector">&gt;NAME</text>
+<text x="-4" y="5.46" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
+</package>
+<package name="NCV565_SOT-223-3">
+<smd name="1" x="-2.3" y="-2.54" dx="2" dy="1.1" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-2.54" dx="2" dy="1.1" layer="1" rot="R90"/>
+<smd name="3" x="2.3" y="-2.54" dx="2" dy="1.1" layer="1" rot="R90"/>
+<smd name="PAD" x="0" y="3.36" dx="3.3" dy="2" layer="1" rot="R180"/>
+<wire x1="-4" y1="4.96" x2="-4" y2="-4.04" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4.04" x2="4" y2="-4.04" width="0.127" layer="21"/>
+<wire x1="4" y1="-4.04" x2="4" y2="4.96" width="0.127" layer="21"/>
+<wire x1="4" y1="4.96" x2="-4" y2="4.96" width="0.127" layer="21"/>
+<text x="-4" y="5.46" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -2528,9 +2539,9 @@ design rules under a new name.</description>
 <attribute name="TEMP_COF" value="N/A" x="41.656" y="112.014" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="63.37" y="32.342" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="U2" library="PP_PowerIC" package="SOT-223B" value="ADP3338AKCZ-3.3-RL" x="84.582" y="41.656"/>
-<element name="U3" library="PP_PowerIC" package="SOT-223B" value="ADP3338AKCZ-2.5-RL" x="75.184" y="41.656"/>
-<element name="U4" library="PP_PowerIC" package="SOT-223B" value="NCV565ST12T3G" x="65.786" y="41.656"/>
+<element name="U2" library="PP_PowerIC" package="ADP3338_SOT-223-3" value="ADP3338AKCZ-3.3-RL" x="84.582" y="41.656"/>
+<element name="U3" library="PP_PowerIC" package="ADP3338_SOT-223-3" value="ADP3338AKCZ-2.5-RL" x="75.184" y="41.656"/>
+<element name="U4" library="PP_PowerIC" package="NCV565_SOT-223-3" value="NCV565ST12T3G" x="65.786" y="41.656"/>
 <element name="U5" library="PP_DigitalIC" package="SOIC-8" value="M25P40-VMN6TPBCT" x="69.85" y="12.954" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.302" y="14.66" size="0.8128" layer="21" font="vector" ratio="16"/>
 </element>

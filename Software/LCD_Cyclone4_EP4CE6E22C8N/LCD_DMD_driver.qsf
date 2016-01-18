@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP4CE6E22C8
 set_global_assignment -name TOP_LEVEL_ENTITY LCD_DMD_driver
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:51:22  AUGUST 15, 2015"
-set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -101,4 +101,6 @@ set_location_assignment PIN_144 -to dotClock
 set_location_assignment PIN_25 -to clock_50
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to backlight_pwm
 set_global_assignment -name CDF_FILE output_files/Chain3.cdf
+set_location_assignment PIN_1 -to led0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led0
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

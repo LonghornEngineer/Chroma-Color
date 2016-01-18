@@ -14,6 +14,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kbh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_jbh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|lpm_mult:Mult4|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kbh.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|ram:u2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rrl1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LCD_DMD_driver|ram:u2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_2im1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -1,0 +1,5 @@
+
+State Machine - |LCD_DMD_driver|startingRaster
+Name startingRaster.0010000000000000 
+startingRaster.0000000000000000 0 
+startingRaster.0010000000000000 1 

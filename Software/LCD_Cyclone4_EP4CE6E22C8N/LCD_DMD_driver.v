@@ -18,11 +18,15 @@ module LCD_DMD_driver(
 	pairO1,
 	pairO0,
 
+	led0,
+	
 	backlight_pwm
 	
 );
 
 //IO defines
+
+output led0;
 
 input clock_50;
 
@@ -94,9 +98,9 @@ reg [15:0] startingRaster = 0;		//Where the display should start reading raster 
 reg [3:0] shader [0:44] [0:29];
 reg [7:0] pwmBrightness = 200;		
 
-reg [15:0] settings [0:7];
+reg [15:0] settings [0:15];			//Stores 16 word-sized settings used to config the FPGA via external MCU
 reg [7:0] whichSetting = 255;			//Which setting we are getting via SPI
-reg hiLow = 1'b0;								//Which byte we are getting for the setting (0 = high byte, 1 = low byte
+reg hiLow = 1'b0;							//Which byte we are getting for the setting (0 = high byte, 1 = low byte
 
 always @*
 begin
@@ -133,6 +137,8 @@ end
 
 always @(posedge bit_clock_out)
 begin
+
+
 
 	readAddress <= currentPixel;											//Set RAM read port to current pixel
 	
@@ -185,9 +191,9 @@ begin
 								greenO <= 62;
 								blueO <= 62;							
 									
-								redE <= 63;
-								greenE <= 63;
-								blueE <= 63;											
+								redE <= 62;
+								greenE <= 62;
+								blueE <= 62;											
 							end
 						else																												//Below white portion. Will either be black, or active DMD area
 							begin
@@ -195,7 +201,7 @@ begin
 									begin	
 										if (pixelX == 28)
 											begin		
-												if (pixelYcount < 32)
+												if (pixelYcount < settings[5])
 													begin
 														currentPixel <= currentPixel + 16'h1;
 													end
@@ -210,7 +216,7 @@ begin
 												pixelX <= pixelX + 8'h2;		
 											end	
 										
-										if (pixelYcount < 32)
+										if (pixelYcount < settings[5])
 											begin
 
 												//redO <= dataOut[7:5] * 9;
@@ -324,7 +330,6 @@ begin
 
 end
 
-/*
 
 always @(posedge dotClock)
 begin
@@ -364,13 +369,13 @@ begin
 
 			if (startingRaster == 0)							//Flip the draw and fill buffers
 				begin
-					startingRaster <= 4096;						//Where the display should draw from
-					writeAddress <= 65535;							//Where the next frame will be read into memory				
+					startingRaster <= 8192;						//Where the display should draw from
+					writeAddress <= 65535;						//Where the next frame will be read into memory. We goto the last position of the 16 bit memory counter so it rolls forward to 0 on next cycle				
 				end
 			else
 				begin
 					startingRaster <= 0;							//Where the display should draw from
-					writeAddress <= 4095;						//Where the next frame will be read into memory					
+					writeAddress <= 8191;						//Where the next frame will be read into memory. We ONE BELOW the target since next cycle it will be advanced before anything happens						
 				end
 				
 		end
@@ -423,10 +428,10 @@ begin
 end
 
 
-*/
-
 always @(posedge pwm_clock_out)
 begin
+
+		led0 <= 1;
 
 		if (pwmBrightness > settings[3])
 			begin
@@ -487,12 +492,16 @@ wire	[7:0]  dataOut;
 initial
 begin
 
-	settings[0:7] = '{100, 300, 1, 225, 0, 0, 0, 0};
+	//settings[0:15] = '{200, 300, 0, 225, 128, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 	
+	settings[0:15] = '{50, 70, 0, 225, 128, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};				//Testing double-high version
+		
 	//0 = endingWhite bar
 	//1 = start of DMD draw
 	//2 = pixel shape
 	//3 = brightness (0-250)
+	//4 = width in virtual pixels (just 128 for now)
+	//5 = height in virtual pixels (32 or 64)
 
 	shader = 
 	'{
@@ -539,23 +548,41 @@ begin
 	'{4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h4, 4'h4, 4'h4, 4'h4, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h4, 4'h4, 4'h4, 4'h4, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0},
 	'{4'h0, 4'h0, 4'h3, 4'h4, 4'h4, 4'h5, 4'h5, 4'h5, 4'h5, 4'h4, 4'h4, 4'h3, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h3, 4'h4, 4'h4, 4'h5, 4'h5, 4'h5, 4'h5, 4'h4, 4'h4, 4'h3, 4'h0, 4'h0, 4'h0},
 	'{4'h0, 4'h3, 4'h4, 4'h5, 4'h5, 4'h6, 4'h6, 4'h6, 4'h6, 4'h5, 4'h5, 4'h4, 4'h3, 4'h0, 4'h0,		 4'h0, 4'h3, 4'h4, 4'h5, 4'h5, 4'h6, 4'h6, 4'h6, 4'h6, 4'h5, 4'h5, 4'h4, 4'h3, 4'h0, 4'h0},
-	'{4'h0, 4'h3, 4'h4, 4'h6, 4'h6, 4'h7, 4'h7, 4'h7, 4'h7, 4'h6, 4'h6, 4'h4, 4'h3, 4'h0, 4'h0,		 4'h0, 4'h3, 4'h4, 4'h6, 4'h6, 4'h7, 4'h7, 4'h7, 4'h7, 4'h6, 4'h6, 4'h4, 4'h3, 4'h0, 4'h0},
-	
+	'{4'h0, 4'h3, 4'h4, 4'h6, 4'h6, 4'h7, 4'h7, 4'h7, 4'h7, 4'h6, 4'h6, 4'h4, 4'h3, 4'h0, 4'h0,		 4'h0, 4'h3, 4'h4, 4'h6, 4'h6, 4'h7, 4'h7, 4'h7, 4'h7, 4'h6, 4'h6, 4'h4, 4'h3, 4'h0, 4'h0},	
 	'{4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h8, 4'h8, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0,		 4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h8, 4'h8, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0},
 	'{4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h9, 4'h9, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0,		 4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h9, 4'h9, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0},
 	'{4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h9, 4'h9, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0,		 4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h9, 4'h9, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0},
-	'{4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h8, 4'h8, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0,		 4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h8, 4'h8, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0},	
-	
+	'{4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h8, 4'h8, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0,		 4'h3, 4'h4, 4'h5, 4'h6, 4'h7, 4'h8, 4'h8, 4'h8, 4'h8, 4'h7, 4'h6, 4'h5, 4'h4, 4'h3, 4'h0},		
 	'{4'h0, 4'h3, 4'h4, 4'h6, 4'h6, 4'h7, 4'h7, 4'h7, 4'h7, 4'h6, 4'h6, 4'h4, 4'h3, 4'h0, 4'h0,		 4'h0, 4'h3, 4'h4, 4'h6, 4'h6, 4'h7, 4'h7, 4'h7, 4'h7, 4'h6, 4'h6, 4'h4, 4'h3, 4'h0, 4'h0},
 	'{4'h0, 4'h3, 4'h4, 4'h5, 4'h5, 4'h6, 4'h6, 4'h6, 4'h6, 4'h5, 4'h5, 4'h4, 4'h3, 4'h0, 4'h0,		 4'h0, 4'h3, 4'h4, 4'h5, 4'h5, 4'h6, 4'h6, 4'h6, 4'h6, 4'h5, 4'h5, 4'h4, 4'h3, 4'h0, 4'h0},
 	'{4'h0, 4'h0, 4'h3, 4'h4, 4'h4, 4'h5, 4'h5, 4'h5, 4'h5, 4'h4, 4'h4, 4'h3, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h3, 4'h4, 4'h4, 4'h5, 4'h5, 4'h5, 4'h5, 4'h4, 4'h4, 4'h3, 4'h0, 4'h0, 4'h0},
 	'{4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h4, 4'h4, 4'h4, 4'h4, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h4, 4'h4, 4'h4, 4'h4, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0},
-	'{4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0},
-	
+	'{4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0},	
 	'{4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0}
-	
 
 	};
+	
+	//Fake High Resolution		
+//	
+//	'{4'h0, 4'h2, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0, 4'h0, 4'h0, 4'h5, 4'h5, 4'h5, 4'h2, 4'h0, 4'h0,		 4'h0, 4'h2, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0, 4'h0, 4'h0, 4'h5, 4'h5, 4'h5, 4'h2, 4'h0, 4'h0},		
+//	'{4'h2, 4'h5, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h5, 4'h2, 4'h0,		 4'h2, 4'h5, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h5, 4'h2, 4'h0},
+//	'{4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0,		 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0},
+//	'{4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0,		 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0},
+//	'{4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0,		 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0},	
+//	'{4'h3, 4'h5, 4'h5, 4'h5, 4'h5, 4'h3, 4'h0, 4'h0, 4'h0, 4'h5, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0,		 4'h3, 4'h5, 4'h5, 4'h5, 4'h5, 4'h3, 4'h0, 4'h0, 4'h0, 4'h5, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0},
+//	'{4'h0, 4'h3, 4'h3, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0, 4'h2, 4'h2, 4'h2, 4'h2, 4'h0, 4'h0,		 4'h0, 4'h3, 4'h3, 4'h3, 4'h3, 4'h0, 4'h0, 4'h0, 4'h0, 4'h3, 4'h3, 4'h3, 4'h3, 4'h0, 4'h0},
+//	'{4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0},
+//	
+//	'{4'h0, 4'h5, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0, 4'h0, 4'h0, 4'h5, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0,		 4'h0, 4'h5, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0, 4'h0, 4'h0, 4'h5, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0},		
+//	'{4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0,		 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0},
+//	'{4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0,		 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0},
+//	'{4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0,		 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h9, 4'h5, 4'h0},	
+//	'{4'h2, 4'h5, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h5, 4'h2, 4'h0,		 4'h2, 4'h5, 4'h9, 4'h9, 4'h9, 4'h5, 4'h3, 4'h0, 4'h5, 4'h9, 4'h9, 4'h9, 4'h5, 4'h2, 4'h0},
+//	'{4'h0, 4'h2, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0, 4'h0, 4'h0, 4'h5, 4'h5, 4'h5, 4'h2, 4'h0, 4'h0,		 4'h0, 4'h2, 4'h5, 4'h5, 4'h5, 4'h0, 4'h0, 4'h0, 4'h0, 4'h5, 4'h5, 4'h5, 4'h2, 4'h0, 4'h0},
+//	'{4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0,		 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0, 4'h0}
+//	
+//	};
+
 
 end	
 	

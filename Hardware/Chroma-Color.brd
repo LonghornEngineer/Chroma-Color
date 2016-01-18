@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -130,6 +130,8 @@
 <text x="103.378" y="18.034" size="1.778" layer="21" font="vector" ratio="16" rot="R90" align="center">DMD DATA</text>
 <text x="102.87" y="40.132" size="1.778" layer="21" font="vector" ratio="16" rot="R90" align="center">PWR</text>
 <text x="69.088" y="30.226" size="1.778" layer="21" font="vector" ratio="16" rot="R180" align="center">PROG</text>
+<text x="36.322" y="38.1" size="1.016" layer="21" font="vector" ratio="16" align="center">^
+RED WIRES</text>
 </plain>
 <libraries>
 <library name="PP_Aesthetics">
@@ -2576,7 +2578,7 @@ design rules under a new name.</description>
 <attribute name="TEMP_COF" value="N/A" x="35.814" y="100.076" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="61.592" y="25.484" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="J2" library="PP_Connectors" package="87832-6422" value="87832-6422" x="22.352" y="44.45" rot="R180">
+<element name="J2" library="PP_Connectors" package="87832-6422" value="87832-6422" x="22.352" y="44.45" smashed="yes" rot="R180">
 <attribute name="LABEL03" value="" x="-6.858" y="80.01" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LABEL04" value="" x="-6.858" y="80.01" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LABEL05" value="" x="-6.858" y="80.01" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2607,6 +2609,7 @@ design rules under a new name.</description>
 <attribute name="LABEL01" value="" x="-6.858" y="80.01" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LABEL02" value="" x="-6.858" y="80.01" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LABEL30" value="" x="22.352" y="44.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="6.096" y="39.878" size="1.016" layer="25" font="vector" ratio="16" align="top-left"/>
 </element>
 <element name="C22" library="MF_Passives" package="C0603" value="0.1uF" x="63.5" y="10.414" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="N/A" x="63.5" y="10.414" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2955,7 +2958,7 @@ design rules under a new name.</description>
 <attribute name="LABEL02" value="5V" x="100.806" y="37.75" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left"/>
 <attribute name="LABEL03" value="GND" x="100.702" y="33.178" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left"/>
 <attribute name="LABEL01" value="12V" x="100.656" y="41.052" size="1.016" layer="25" font="vector" ratio="16" rot="R90" align="center-left"/>
-<attribute name="NAME" x="101.496" y="48.1294" size="1.016" layer="25" font="vector" ratio="16" rot="R270"/>
+<attribute name="NAME" x="90.0466" y="31.138" size="1.016" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="J3" library="PP_Connectors" package="1775470-6" value="1775470-6" x="51.562" y="43.942" rot="R180">
 <attribute name="LABEL02" value="" x="51.562" y="43.942" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4886,4 +4889,10 @@ design rules under a new name.</description>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

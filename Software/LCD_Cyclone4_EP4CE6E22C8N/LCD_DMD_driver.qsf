@@ -51,7 +51,7 @@ set_global_assignment -name VERILOG_FILE LCD_DMD_driver.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dotClock
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dotData
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dotEnable
@@ -103,4 +103,24 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to backlight_pwm
 set_global_assignment -name CDF_FILE output_files/Chain3.cdf
 set_location_assignment PIN_1 -to led0
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to led0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to pairE0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to pairE1
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to "pairE0(n)"
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_NCE_PIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 1
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 2
+set_global_assignment -name IOBANK_VCCIO 2.5V -section_id 3
+set_global_assignment -name IOBANK_VCCIO 2.5V -section_id 4
+set_global_assignment -name IOBANK_VCCIO 2.5V -section_id 5
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 6
+set_global_assignment -name IOBANK_VCCIO 2.5V -section_id 7
+set_global_assignment -name IOBANK_VCCIO 3.3V -section_id 8
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

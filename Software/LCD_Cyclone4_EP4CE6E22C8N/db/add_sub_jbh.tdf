@@ -1,8 +1,8 @@
 --lpm_add_sub CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 DEVICE_FAMILY="Cyclone IV E" LPM_PIPELINE=0 LPM_REPRESENTATION="UNSIGNED" LPM_WIDTH=5 ONE_INPUT_IS_CONSTANT="NO" dataa datab result
---VERSION_BEGIN 13.1 cbx_cycloneii 2014:03:12:18:15:29:SJ cbx_lpm_add_sub 2014:03:12:18:15:29:SJ cbx_mgl 2014:03:12:18:25:18:SJ cbx_stratix 2014:03:12:18:15:31:SJ cbx_stratixii 2014:03:12:18:15:31:SJ  VERSION_END
+--VERSION_BEGIN 13.1 cbx_cycloneii 2013:10:23:18:05:48:SJ cbx_lpm_add_sub 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ cbx_stratix 2013:10:23:18:05:48:SJ cbx_stratixii 2013:10:23:18:05:48:SJ  VERSION_END
 
 
--- Copyright (C) 1991-2014 Altera Corporation
+-- Copyright (C) 1991-2013 Altera Corporation
 --  Your use of Altera Corporation's design tools, logic functions 
 --  and other software and tools, and its AMPP partner logic 
 --  functions, and any output files from any of the foregoing 

@@ -1,4 +1,4 @@
- -- Copyright (C) 1991-2014 Altera Corporation
+ -- Copyright (C) 1991-2013 Altera Corporation
  -- Your use of Altera Corporation's design tools, logic functions 
  -- and other software and tools, and its AMPP partner logic 
  -- functions, and any output files from any of the foregoing 
@@ -27,11 +27,11 @@
  -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
  --                 of its bank.
  --					Bank 1:		3.3V
- --					Bank 2:		2.5V
+ --					Bank 2:		3.3V
  --					Bank 3:		2.5V
  --					Bank 4:		2.5V
  --					Bank 5:		2.5V
- --					Bank 6:		2.5V
+ --					Bank 6:		3.3V
  --					Bank 7:		2.5V
  --					Bank 8:		3.3V
  -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
@@ -63,7 +63,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 CHIP  "LCD_DMD_driver"  ASSIGNED TO AN: EP4CE6E22C8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -92,8 +92,8 @@ nCE                          : 21        :        :                   :         
 GND                          : 22        : gnd    :                   :         :           :                
 GND+                         : 23        :        :                   :         : 1         :                
 GND+                         : 24        :        :                   :         : 2         :                
-clock_50                     : 25        : input  : 2.5 V             :         : 2         : Y              
-VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
+clock_50                     : 25        : input  : 3.3-V LVTTL       :         : 2         : Y              
+VCCIO2                       : 26        : power  :                   : 3.3V    : 2         :                
 GND                          : 27        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :         : 2         :                
 VCCINT                       : 29        : power  :                   : 1.2V    :           :                
@@ -160,7 +160,7 @@ GND+                         : 89        :        :                   :         
 GND+                         : 90        :        :                   :         : 6         :                
 GND+                         : 91        :        :                   :         : 6         :                
 CONF_DONE                    : 92        :        :                   :         : 6         :                
-VCCIO6                       : 93        : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : 93        : power  :                   : 3.3V    : 6         :                
 MSEL0                        : 94        :        :                   :         : 6         :                
 GND                          : 95        : gnd    :                   :         :           :                
 MSEL1                        : 96        :        :                   :         : 6         :                
@@ -168,7 +168,7 @@ MSEL2                        : 97        :        :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : 98        :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 99        :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 100       :        :                   :         : 6         :                
-~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : 101       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : 101       : output : 3.3-V LVTTL       :         : 6         : N              
 VCCINT                       : 102       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 103       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 104       :        :                   :         : 6         :                

@@ -1,8 +1,8 @@
 --lpm_mux CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone IV E" LPM_SIZE=2 LPM_WIDTH=8 LPM_WIDTHS=1 data result sel
---VERSION_BEGIN 13.1 cbx_lpm_mux 2014:03:12:18:15:30:SJ cbx_mgl 2014:03:12:18:25:18:SJ  VERSION_END
+--VERSION_BEGIN 13.1 cbx_lpm_mux 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ  VERSION_END
 
 
--- Copyright (C) 1991-2014 Altera Corporation
+-- Copyright (C) 1991-2013 Altera Corporation
 --  Your use of Altera Corporation's design tools, logic functions 
 --  and other software and tools, and its AMPP partner logic 
 --  functions, and any output files from any of the foregoing 
